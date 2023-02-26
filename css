@@ -1,0 +1,92 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&family=Roboto&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Athiti', sans-serif;
+    }
+    body {
+      background: #eee;
+    }
+    #side_nav {
+      background: #007494;
+      min-width: 250px;
+      max-width: 250px;
+      transition: all 0.3s;
+    }
+    .content {
+      min-height: 100vh;
+      width: 100%;
+    }
+    hr {
+      background: #eee;
+    }
+   .sidebar li.active {
+      background: #eee;
+      border-radius: 8px;
+    }
+    .sidebar li.active a,
+    .sidebar li a:hover {
+      color: #000;
+      background: #eee;
+    }
+    .sidebar li a {
+      color: #fff;
+    }
+    .title {
+      font-size: 24px;
+    }
+    .close-btn {
+      float: right;
+    }
+    .card-title{
+      float:left;
+    }
+    .card-title1{
+      float: right;
+    }
+    .card-indicator {
+    item-align:center;
+    width:100%;  
+    margin: .4rem 0rem;
+    height: 10px;
+    border-radius: 4px;
+    background: #e9edf2;
+    overflow: hidden;
+}
+
+.indicator {
+    height: 10px;
+    border-radius: 4px;
+}
+
+.indicator.one {
+    background: #22baa0;
+}
+
+.indicator.two {
+    background: #11a8c3;
+}
+
+.indicator.three {
+    background: #f6d433;
+}
+
+.indicator.four {
+    background: #f25656;
+}
+    @media(max-width: 767px) {
+      #side_nav {
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+      }
+      #side_nav.active {
+        margin-left: 0;
+      }
+      .title{
+        font-size:18px;
+      }
+    }
+  </style>
